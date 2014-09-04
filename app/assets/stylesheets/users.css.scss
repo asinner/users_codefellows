@@ -1,0 +1,83 @@
+@import 'mixins';
+
+#users {
+	width: 600px;
+	margin: 50px auto 0;
+}
+#users .button,
+#users .heading {
+	float: left;
+}
+#users .header {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid rgb(230, 230, 230);
+}
+#users .button {
+	position: relative;
+	top: 10px;
+	height: 30px;
+	margin: 0 10px;
+	background: #3BAFED;
+	color: #FFF;
+	line-height: 30px;
+	padding: 0 10px;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 12px;
+	@include border-radius(4px);
+}
+#users .user {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	border-bottom: 1px solid rgb(230, 230, 230);
+}
+#users .user .container {
+	float: left;
+}
+#users .user .name {
+	width: 150px;
+	padding: 0 5px;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+#users .user .email {
+	width: 200px;
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+#users .user .tools {
+	float: right;
+}
+#users .user .tools .link {
+	text-decoration: none;
+	padding: 0 5px;
+}
+#users .user .tools .link.delete {
+	color: #ED4747;
+}
+#users .user .tools .link:hover {
+	text-decoration: underline;
+}
+#users .no-results {
+	display: block;
+	padding: 15px 0;
+	color: rgb(150, 150, 150);
+	text-align: center;
+}
+
+#new-user-page {
+	width: 300px;
+	margin: 50px auto 0;
+}
+#new-user-page .heading {
+	height: 30px;
+	line-height: 30px;
+}
+
+.edit_user {
+	
+}

@@ -1,0 +1,23 @@
+@import 'mixins';
+
+.flash {
+	width: 600px;
+	margin: 0 auto 0;
+	background: #CCC;
+	padding: 10px;
+	@include border-radius(4px);
+	font-size: 14px;
+	margin-top: 10px;
+}
+.flash.success {
+	background: #EBFAE8;
+	border: 1px solid #C1DBBD;
+}
+.flash.error {
+	background: #FFEDED;
+	border: 1px solid #E8B5B5;
+}
+.flash.notice {
+	background: #FFFDE8;
+	border: 1px solid #E8E4B5;
+}

@@ -1,0 +1,35 @@
+<%= form_for @user do |f| %>
+
+	<div class='field'>
+		<%= f.label :first_name %>
+		<%= f.text_field :first_name %>
+
+		<% if @user.errors[:first_name].any? %>
+			<span class='error'><%= @user.errors[:first_name].first %></span>
+		<% end %>
+	</div>
+	<div class='clear'></div>
+
+	<div class='field'>
+		<%= f.label :last_name %>
+		<%= f.text_field :last_name %>
+
+		<% if @user.errors[:last_name].any? %>
+			<span class='error'><%= @user.errors[:last_name].first %></span>
+		<% end %>
+	</div>
+	<div class='clear'></div>
+
+	<div class='field'>
+		<%= f.label :email %>
+		<%= f.text_field :email %>
+
+		<% if @user.errors[:email].any? %>
+			<span class='error'><%= @user.errors[:email].first %></span>
+		<% end %>
+	</div>
+	<div class='clear'></div>	
+
+	<%= f.submit %>
+
+<% end %>

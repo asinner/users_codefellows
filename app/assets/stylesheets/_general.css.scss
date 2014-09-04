@@ -1,0 +1,16 @@
+html {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+* {
+	box-sizing: inherit;
+	text-rendering: optimizelegibility;
+}
+h1 {
+	font-weight: 700;
+	font-size: 18px;
+}
+.clear {
+	clear: both;
+}

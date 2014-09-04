@@ -1,0 +1,31 @@
+<div id='users'>
+	<div class='header'>
+		<h1 class='heading'>Users</h1>
+		<%= link_to 'Add user ›', new_user_path, class: 'button' %>
+	</div>
+	<div class='body'>
+		<% if @users.any? %>
+
+			<% @users.each do |user| %>
+				<div class='user'>
+					<div class='container name'>
+						<%= user.fullname %>					
+					</div>
+					<div class='container email'>
+						<%= user.email %>
+					</div>
+					<div class='container tools'>
+						<%= link_to 'Edit', edit_user_path(user), class: 'link' %>
+						<%= link_to 'Remove', user_path(user), method: :delete, class: 'link delete' %>
+					</div>
+				</div>
+			<% end %>
+
+		<% else %>
+
+		  <span class='no-results'>No users added yet</span>
+
+		<% end %>
+		
+	</div>
+</div>
